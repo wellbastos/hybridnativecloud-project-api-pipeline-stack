@@ -10,7 +10,7 @@ provider:
       Action:
         - "codepipeline:*"
       Resource: 
-        - "arn:aws:codepipeline:us-east-1:*:hackathon-CD-app-stack"
+        - "arn:aws:codepipeline:us-east-1:*:hackathon-CD-app-stack-prd"
         
 
 
@@ -18,7 +18,7 @@ functions:
   caller-codepipeline:
     handler: handler.main
     environment:
-      GROUP: rafabarbosa
+      GROUP: grupo1
     events:
       - http:
          path: activate
