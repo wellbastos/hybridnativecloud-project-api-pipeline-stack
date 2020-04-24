@@ -1,4 +1,4 @@
-service: caller-pipeline
+service: caller-pipeline-stg
 provider:
   name: aws
   runtime: python3.8
